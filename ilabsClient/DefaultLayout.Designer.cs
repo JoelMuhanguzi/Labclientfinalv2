@@ -70,16 +70,17 @@
             this.waveformGraph1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.waveformGraph1.Border = NationalInstruments.UI.Border.Raised;
+            this.waveformGraph1.BackgroundImageAlignment = NationalInstruments.UI.ImageAlignment.Center;
+            this.waveformGraph1.Border = NationalInstruments.UI.Border.ThickFrame3D;
             this.waveformGraph1.Caption = "WAVEFORMS";
             this.waveformGraph1.CaptionForeColor = System.Drawing.Color.Blue;
             this.waveformGraph1.ForeColor = System.Drawing.Color.Blue;
-            this.waveformGraph1.Location = new System.Drawing.Point(388, 69);
+            this.waveformGraph1.Location = new System.Drawing.Point(376, 70);
             this.waveformGraph1.Margin = new System.Windows.Forms.Padding(4);
             this.waveformGraph1.Name = "waveformGraph1";
             this.waveformGraph1.Plots.AddRange(new NationalInstruments.UI.WaveformPlot[] {
             this.waveformPlot2});
-            this.waveformGraph1.Size = new System.Drawing.Size(544, 609);
+            this.waveformGraph1.Size = new System.Drawing.Size(749, 518);
             this.waveformGraph1.TabIndex = 0;
             this.waveformGraph1.UseColorGenerator = true;
             this.waveformGraph1.XAxes.AddRange(new NationalInstruments.UI.XAxis[] {
@@ -101,12 +102,12 @@
             this.frequency_knob.CaptionForeColor = System.Drawing.Color.Blue;
             this.frequency_knob.DialColor = System.Drawing.SystemColors.Info;
             this.frequency_knob.KnobStyle = NationalInstruments.UI.KnobStyle.FlatWithThinNeedle;
-            this.frequency_knob.Location = new System.Drawing.Point(194, 345);
+            this.frequency_knob.Location = new System.Drawing.Point(194, 289);
             this.frequency_knob.Margin = new System.Windows.Forms.Padding(4);
             this.frequency_knob.Name = "frequency_knob";
             this.frequency_knob.PointerColor = System.Drawing.SystemColors.HotTrack;
             this.frequency_knob.Range = new NationalInstruments.UI.Range(0D, 1000D);
-            this.frequency_knob.Size = new System.Drawing.Size(166, 161);
+            this.frequency_knob.Size = new System.Drawing.Size(166, 167);
             this.frequency_knob.TabIndex = 1;
             this.frequency_knob.Value = 100D;
             this.frequency_knob.AfterChangeValue += new NationalInstruments.UI.AfterChangeNumericValueEventHandler(this.knob1_AfterChangeValue);
@@ -119,12 +120,12 @@
             this.amplitude_knob.CaptionForeColor = System.Drawing.Color.Blue;
             this.amplitude_knob.DialColor = System.Drawing.SystemColors.Info;
             this.amplitude_knob.KnobStyle = NationalInstruments.UI.KnobStyle.FlatWithThinNeedle;
-            this.amplitude_knob.Location = new System.Drawing.Point(12, 345);
+            this.amplitude_knob.Location = new System.Drawing.Point(13, 289);
             this.amplitude_knob.Margin = new System.Windows.Forms.Padding(4);
             this.amplitude_knob.Name = "amplitude_knob";
             this.amplitude_knob.PointerColor = System.Drawing.SystemColors.HotTrack;
             this.amplitude_knob.Range = new NationalInstruments.UI.Range(0D, 5D);
-            this.amplitude_knob.Size = new System.Drawing.Size(163, 161);
+            this.amplitude_knob.Size = new System.Drawing.Size(173, 167);
             this.amplitude_knob.TabIndex = 2;
             this.amplitude_knob.Value = 1D;
             this.amplitude_knob.AfterChangeValue += new NationalInstruments.UI.AfterChangeNumericValueEventHandler(this.knob2_AfterChangeValue);
@@ -141,7 +142,7 @@
             "sine",
             "square",
             "triangle"});
-            this.comboBox1.Location = new System.Drawing.Point(97, 525);
+            this.comboBox1.Location = new System.Drawing.Point(96, 446);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(128, 25);
@@ -153,7 +154,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(13, 528);
+            this.label1.Location = new System.Drawing.Point(12, 449);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -166,7 +167,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(12, 565);
+            this.label2.Location = new System.Drawing.Point(12, 474);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -190,7 +191,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(932, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1137, 29);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -209,7 +210,7 @@
             // 
             this.uploadLabToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.uploadLabToolStripMenuItem.Name = "uploadLabToolStripMenuItem";
-            this.uploadLabToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.uploadLabToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.uploadLabToolStripMenuItem.Text = "Upload lab";
             this.uploadLabToolStripMenuItem.Click += new System.EventHandler(this.uploadLabToolStripMenuItem_Click);
             // 
@@ -217,7 +218,7 @@
             // 
             this.closeLabToolStripMenuItem.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.closeLabToolStripMenuItem.Name = "closeLabToolStripMenuItem";
-            this.closeLabToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.closeLabToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.closeLabToolStripMenuItem.Text = "Close ";
             this.closeLabToolStripMenuItem.Click += new System.EventHandler(this.closeLabToolStripMenuItem_Click);
             // 
@@ -282,7 +283,7 @@
             this.TimeDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TimeDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeDisplay.ForeColor = System.Drawing.Color.Blue;
-            this.TimeDisplay.Location = new System.Drawing.Point(698, 33);
+            this.TimeDisplay.Location = new System.Drawing.Point(903, 33);
             this.TimeDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.TimeDisplay.Name = "TimeDisplay";
             this.TimeDisplay.ReadOnly = true;
@@ -301,7 +302,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(568, 41);
+            this.label3.Location = new System.Drawing.Point(773, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 21);
@@ -315,7 +316,7 @@
             this.lab_Circuit.Location = new System.Drawing.Point(13, 69);
             this.lab_Circuit.Margin = new System.Windows.Forms.Padding(4);
             this.lab_Circuit.Name = "lab_Circuit";
-            this.lab_Circuit.Size = new System.Drawing.Size(347, 259);
+            this.lab_Circuit.Size = new System.Drawing.Size(333, 212);
             this.lab_Circuit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lab_Circuit.TabIndex = 12;
             this.lab_Circuit.TabStop = false;
@@ -334,7 +335,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 586);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 495);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(347, 92);
@@ -361,7 +362,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(568, 4);
+            this.label5.Location = new System.Drawing.Point(773, 4);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 21);
             this.label5.TabIndex = 17;
@@ -372,7 +373,7 @@
             this.ExistingLabList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ExistingLabList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ExistingLabList.FormattingEnabled = true;
-            this.ExistingLabList.Location = new System.Drawing.Point(698, 12);
+            this.ExistingLabList.Location = new System.Drawing.Point(903, 12);
             this.ExistingLabList.Name = "ExistingLabList";
             this.ExistingLabList.Size = new System.Drawing.Size(222, 25);
             this.ExistingLabList.TabIndex = 18;
@@ -385,7 +386,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(932, 684);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1137, 593);
             this.Controls.Add(this.ExistingLabList);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -403,6 +405,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -410,7 +413,6 @@
             this.Name = "DefaultLayout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iLab Client";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.waveformGraph1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frequency_knob)).EndInit();

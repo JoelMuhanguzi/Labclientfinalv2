@@ -1,30 +1,16 @@
 ﻿using NationalInstruments.Net;
-using NationalInstruments.Analysis;
-using NationalInstruments.Analysis.Conversion;
-using NationalInstruments.Analysis.Dsp;
-using NationalInstruments.Analysis.Dsp.Filters;
-using NationalInstruments.Analysis.Math;
-using NationalInstruments.Analysis.Monitoring;
-using NationalInstruments.Analysis.SignalGeneration;
-using NationalInstruments.Analysis.SpectralMeasurements;
-using NationalInstruments;
 using NationalInstruments.UI;
-using NationalInstruments.UI.WindowsForms;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Net.Http;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Xml.Linq;
 using System.IO.Compression;
 using System.Net;
-using System.Globalization;
 
 namespace projectTest1
 {
